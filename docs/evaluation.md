@@ -1,60 +1,6 @@
 
 ## Inference & Evaluation Pipeline
 
-### Inference
-
-- Download the GeoBench dataset from [HuggingFace](https://huggingface.co/datasets/LibraTree/GeoBench) and place it in the `./.temp/datasets` directory.
-
-```bash
-python3 scripts/download_hf.py --dataset LibraTree/GeoBench --local_dataset_dir ./.temp/datasets
-```
-
-- Download the pre-trained model from [HuggingFace](https://huggingface.co/LibraTree/GeoVista-RL-12k-7B) and place it in the `./.temp/checkpoints` directory.
-
-```bash
-python3 scripts/download_hf.py --model LibraTree/GeoVista-RL-12k-7B --local_model_dir .temp/checkpoints/
-```
-
-- Deploy the GeoVista model with vllm:
-
-```bash
-bash inference/vllm_deploy.sh
-```
-
-- Configure the settings including the output directory, run the inference script:
-
-```bash
-bash inference/run_inference.sh
-```
-
-After running the above commands, you should be able to see the inference results in the specified output directory, e.g., `./.temp/outputs/geobench/geovista-rl-12k-7b/`, which contains the `inference_<timestamp>.jsonl` file with the inference results.
-
-
-### Evaluation
-
-- After obtaining the inference results, you can evaluate the geolocalization performance using the evaluation script:
-
-```bash
-MODEL_NAME=geovista-rl-12k-7b
-BENCHMARK=geobench
-EVALUATION_RESULT=".temp/outputs/${BENCHMARK}/${MODEL_NAME}/evaluation.jsonl"
-
-python3 eval/eval_infer_geolocation.py \
-  --pred_jsonl <The inference file path> \
-  --out_jsonl ${EVALUATION_RESULT}\
-  --dataset_dir .temp/datasets/${BENCHMARK} \
-  --num_samples 1500 \
-  --model_verifier \
-  --no_eval_accurate_dist \
-  --timeout 120 --debug | tee .temp/outputs/${BENCHMARK}/${MODEL_NAME}/evaluation.log 2>&1
-```
-
-You can acclerate the evaluation process by changing the `workers` argument in the above command (default is 1):
-
-```bash
-  --workers 8 \
-```
-
 ### Nuanced Evaluation
 
 To perform nuanced evaluation on GeoBench to obtain the haversine distance with the groud truth, you need to:
@@ -102,3 +48,5 @@ python3 eval/eval_infer_geolocation.py \
   --model_verifier \
   --timeout 120 --debug | tee .temp/outputs/${BENCHMARK}/${MODEL_NAME}/evaluation.log 2>&1
 ```
+
+When the evaluation is done, you will find the haversine distance results in the `evaluation.jsonl` file under the specified output directory, also you will have a result csv file named `eval_summary.csv` containing the summarized evaluation metrics including the level-wise metrics and the haversine distance statistics.
