@@ -41,6 +41,8 @@ then deploy the GeoVista model with vllm:
 bash inference/vllm_deploy_geovista_rl_6k.sh
 ```
 
+![](assets/figure_1_thinking_trajectory.png)
+
 4. Run an example inference
 
 ```bash
@@ -48,8 +50,6 @@ python eval/example.py --multimodal_input examples/geobench-example.png --questi
 ```
 
 You will see the model's thinking trajectory and final answer in the console output.
-
-![](assets/figure_1_thinking_trajectory.png)
 
 
 ## Benchmark
