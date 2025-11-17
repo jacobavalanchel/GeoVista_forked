@@ -93,13 +93,17 @@ We provide the whole inference and evaluation pipeline for GeoVista on GeoBench.
 - Download the GeoBench dataset from [HuggingFace](https://huggingface.co/datasets/LibraTree/GeoBench) and place it in the `./.temp/datasets` directory.
 
 ```bash
-python3 scripts/download_hf.py --dataset LibraTree/GeoBench --local_dataset_dir ./.temp/datasets
+python3 scripts/download_hf.py \
+--dataset LibraTree/GeoBench \
+--local_dataset_dir ./.temp/datasets
 ```
 
 - Download the pre-trained model from [HuggingFace](https://huggingface.co/LibraTree/GeoVista-RL-12k-7B) and place it in the `./.temp/checkpoints` directory.
 
 ```bash
-python3 scripts/download_hf.py --model LibraTree/GeoVista-RL-12k-7B --local_model_dir .temp/checkpoints/
+python3 scripts/download_hf.py \
+--model LibraTree/GeoVista-RL-12k-7B \
+--local_model_dir .temp/checkpoints/
 ```
 
 - Deploy the GeoVista model with vllm:
