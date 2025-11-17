@@ -6,7 +6,7 @@
 </div> -->
 
 <div align="center">
-<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | 📃 Paper | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/LibraTree/GeoBench">🤗 GeoBench</a>
+<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | 📃 Paper | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/datasets/LibraTree/GeoBench">🤗 GeoBench</a>
 </div>
 
 
@@ -55,15 +55,15 @@ from [HuggingFace](https://huggingface.co/LibraTree/GeoVista-RL-6k-7B) and place
 - We assess other geolocalization benchmarks with ours along five axes: **Global Coverage (GC)**, indicating whether images span diverse regions worldwide; **Reasonable Localizability (RC)**, measuring whether non-localizable or trivially localizable images are filtered out to preserve meaningful difficulty; **High Resolution (HR)**, requiring all images to have at least (1,\mathrm{M}) pixels for reliable visual clue extraction; **Data Variety (DV)**, capturing whether multiple image modalities or sources are included to test generalization; and **Nuanced Evaluation (NE)**, which checks whether precise coordinates are available to enable fine-grained distance-based metrics such as haversine error.
 
 
-| **Benchmark**                                                                 | **Year** | **GC** | **RC** | **HR** | **DV** | **NE** |
-| ----------------------------------------------------------------------------- | -------: | :----: | :----: | :----: | :----: | :----: |
-| **[Im2GPS](https://doi.org/10.1109/CVPR.2008.4587784)**                       |     2008 |    ✓   |        |        |        |        |
-| **[YFCC4k](https://api.semanticscholar.org/CorpusID:7449120)**                |     2017 |    ✓   |        |        |        |        |
-| **[Google Landmarks v2](https://api.semanticscholar.org/CorpusID:214802288)** |     2020 |    ✓   |        |        |        |        |
-| **[VIGOR](https://api.semanticscholar.org/CorpusID:227151840)**               |     2022 |        |        |        |    ✓   |        |
-| **[OSV-5M](https://api.semanticscholar.org/CorpusID:269448726)**              |     2024 |    ✓   |    ✓   |        |        |    ✓   |
-| **[GeoComp](https://doi.org/10.48550/arXiv.2502.13759)**                      |     2025 |    ✓   |    ✓   |        |        |    ✓   |
-| **GeoBench (ours)**                                                           |     2025 |    ✓   |    ✓   |    ✓   |    ✓   |    ✓   |
+| **Benchmark** | **Year** | **GC** | **RC** | **HR** | **DV** | **NE** |
+|--------------|---------:|:------:|:------:|:------:|:------:|:------:|
+| **[Im2GPS](https://doi.org/10.1109/CVPR.2008.4587784)** | 2008 | ✓ |  |  |  |  |
+| **[YFCC4k](https://arxiv.org/abs/1705.04838)** | 2017 | ✓ |  |  |  |  |
+| **[Google Landmarks v2](https://arxiv.org/abs/2004.01804)** | 2020 | ✓ |  |  |  |  |
+| **[VIGOR](https://arxiv.org/abs/2011.12172)** | 2022 |  |  |  | ✓ |  |
+| **[OSV-5M](https://arxiv.org/abs/2404.18873)** | 2024 | ✓ | ✓ |  |  | ✓ |
+| **[GeoComp](https://doi.org/10.48550/arXiv.2502.13759)** | 2025 | ✓ | ✓ |  |  | ✓ |
+| **GeoBench (ours)** | 2025 | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 
 ## Evaluation
