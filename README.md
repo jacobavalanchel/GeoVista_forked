@@ -31,13 +31,21 @@ We use [Tavily](https://www.tavily.com/) during inference and training. You can 
 
 from [HuggingFace](https://huggingface.co/LibraTree/GeoVista-RL-6k-7B) and place it in the `./.temp/checkpoints/GeoVista-RL-6k-7B` directory.
 
+4. Run an example inference
+
+
+
 ## Benchmarks
 
 ![](assets/figure-2-benchmark-evaluation.png)
 
 We have already released the [GeoBench](https://huggingface.co/datasets/LibraTree/GeoBench) Dataset on HuggingFace 🤗, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models.
 
-![](assets/figure-3-benchmark.png)
+<!-- ![](assets/figure-3-benchmark.png) -->
+
+<p align="center">
+  <img src="assets/figure-3-benchmark.png" width="50%">
+</p>
 
 GeoBench is a high-resolution, multi-source, globally annotated dataset to evaluate models’ general geolocalization ability.
 
@@ -55,6 +63,11 @@ We assess benchmarks along five axes: **Global Coverage (GC)**, indicating wheth
 | **GeoBench (ours)**                                                           |     2025 |    ✓   |    ✓   |    ✓   |    ✓   |    ✓   |
 
 
+## Evaluation
+
+We provide the whole inference and evaluation pipeline for GeoVista on GeoBench.
+
+- (Release soon) To run evaluation on GeoBench, please refer to [evaluation.md](docs/evaluation.md).
 
 
 ## Citation
