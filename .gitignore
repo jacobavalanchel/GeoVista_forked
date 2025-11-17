@@ -30,3 +30,5 @@ bucket_color.md
 figs/
 
 logs/
+
+.env
