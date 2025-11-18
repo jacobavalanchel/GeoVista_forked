@@ -1,6 +1,6 @@
 
 <!-- ![](./assets/visuothink.png) -->
-![](./assets/agentic_pipeline.png)
+![](./assets/agentic_pipeline.webp)
 
 
 # GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
@@ -10,7 +10,7 @@
 </div> -->
 
 <div align="center">
-<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | 📃 Paper | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/datasets/LibraTree/GeoBench">🤗 GeoVista-Bench (GeoBench)</a>
+<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | 📃 Paper | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/datasets/LibraTree/GeoBench">🤗 GeoVista-Bench (GeoBench)</a> | <a href="https://ekonwang.github.io/geo-vista/"><img src="https://github.githubassets.com/favicons/favicon.svg" width="16" alt="GitHub"> GitHub Page</a>
 </div>
 
 ## Quick Start
@@ -43,7 +43,7 @@ then deploy the GeoVista model with vllm:
 bash inference/vllm_deploy_geovista_rl_6k.sh
 ```
 
-![](assets/figure_1_thinking_trajectory.png)
+![](assets/figure_1_thinking_trajectory.webp)
 
 4. Run an example inference
 
@@ -58,14 +58,14 @@ You will see the model's thinking trajectory and final answer in the console out
 
 ## Benchmark
 
-![](assets/figure-2-benchmark-evaluation.png)
+![](assets/figure-2-benchmark-evaluation.webp)
 
 - We have already released the [GeoVista-Bench (GeoBench)](https://huggingface.co/datasets/LibraTree/GeoBench) Dataset on HuggingFace 🤗, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models.
 
-<!-- ![](assets/figure-3-benchmark.png) -->
+<!-- ![](assets/figure-3-benchmark.webp) -->
 
 <p align="center">
-  <img src="assets/figure-3-benchmark.png" width="50%">
+  <img src="assets/figure-3-benchmark.webp" width="50%">
 </p>
 
 > GeoBench is the first high-resolution, multi-source, globally annotated dataset to evaluate agentic models’ general geolocalization ability.
