@@ -25,12 +25,7 @@ bash setup.sh
 
 2. Set up web search API key
 
-We use [Tavily](https://www.tavily.com/) during inference and training. You can sign up for a free account and get your Tavily API key, and then update the `TAVILY_API_KEY` variable of the `.env` file.
-
-```bash
-# test web search API key
-bash examples/search_test.sh
-```
+We use [Tavily](https://www.tavily.com/) during inference and training. You can sign up for a free account and get your Tavily API key, and then update the `TAVILY_API_KEY` variable of the `.env` file. You can run `bash examples/search_test.sh` to verify your API key is working.
 
 3. Download the pre-trained model and deploy with vllm
 
