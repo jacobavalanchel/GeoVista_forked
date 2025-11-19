@@ -27,6 +27,11 @@ bash setup.sh
 
 We use [Tavily](https://www.tavily.com/) during inference and training. You can sign up for a free account and get your Tavily API key, and then update the `TAVILY_API_KEY` variable of the `.env` file.
 
+```bash
+# test web search API key
+bash examples/search_test.sh
+```
+
 3. Download the pre-trained model and deploy with vllm
 
 from [HuggingFace](https://huggingface.co/LibraTree/GeoVista-RL-6k-7B), place it in the `./.temp/checkpoints/LibraTree/GeoVista-RL-6k-7B` directory.
