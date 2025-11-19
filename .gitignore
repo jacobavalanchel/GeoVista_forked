@@ -31,4 +31,4 @@ figs/
 
 logs/
 
-.env
+# .env
