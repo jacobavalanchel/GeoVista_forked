@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/avatar-png-512.webp" width="30%" alt="GeoVista Avatar">
+  <img src="assets/avatar-png-512.webp" width="20%" alt="GeoVista Avatar">
 </p>
 
 # GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
