@@ -10,7 +10,7 @@
 
 
 <div align="center">
-  <img src="assets/avatar.webp" alt="logo" height="100">
+  <img src="assets/avatar.webp" alt="logo" height="200">
   <h1 style="font-size: 32px; font-weight: bold;"> GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization </h1>
 
   <br>
