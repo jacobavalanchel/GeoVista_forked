@@ -1,7 +1,6 @@
-
-<!-- ![](./assets/visuothink.png) -->
-![](./assets/agentic_pipeline.webp)
-
+<p align="center">
+  <img src="assets/avatar-png-512.webp" width="30%" alt="GeoVista Avatar">
+</p>
 
 # GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
 
@@ -10,8 +9,11 @@
 </div> -->
 
 <div align="center">
-<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | 📃 Paper | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/datasets/LibraTree/GeoBench">🤗 GeoVista-Bench (GeoBench)</a> | <a href="https://ekonwang.github.io/geo-vista/"><img src="https://github.githubassets.com/favicons/favicon.svg" width="16" alt="GitHub"> Project Page</a>
+<a href="https://github.com/ekonwang/GeoVista">💻 Code</a> | <a href="https://arxiv.org/abs/2511.15705">📃 Technical Report</a> | <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B">🤗 GeoVista-RL-6k-7B</a> | <a href="https://huggingface.co/datasets/LibraTree/GeoBench">🤗 GeoVista-Bench (GeoBench)</a> | <a href="https://ekonwang.github.io/geo-vista/"><img src="https://github.githubassets.com/favicons/favicon.svg" width="16" alt="GitHub"> Project Page</a>
 </div>
+
+<!-- ![](./assets/visuothink.png) -->
+![](./assets/agentic_pipeline.webp)
 
 ## Quick Start
 
