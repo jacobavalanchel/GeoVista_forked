@@ -29,6 +29,7 @@
   </a>
 </div>
 
+*\* This repository is intended solely for research purposes.*
 
 ## Quick Start
 
