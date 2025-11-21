@@ -30,7 +30,7 @@
 </div>
 
 <div align="center">
-  *\* This repository is intended solely for research purposes.*
+  <i>* This repository is intended solely for research purposes.</i>
 </div>
 
 ## Quick Start
