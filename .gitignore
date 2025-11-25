@@ -1,6 +1,7 @@
 *output*
 data/
 wandb/
+build/
 
 *.egg-info
 *.egg
